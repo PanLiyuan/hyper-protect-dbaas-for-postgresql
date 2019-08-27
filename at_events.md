@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-07-17"
+lastupdated: "2019-08-28"
 
 keywords: Activity tracker events
 
@@ -25,7 +25,7 @@ subcollection: hyper-protect-dbaas-for-postgresql
 Use the {{site.data.keyword.cloudaccesstrailfull}} service to track how users and applications interact with {{site.data.keyword.cloud_notm}} {{site.data.keyword.ihsdbaas_postgresql_full}}.
 {: shortdesc}
 
-The {{site.data.keyword.cloudaccesstrailfull_notm}} service records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. For how to provision the {{site.data.keyword.cloudaccesstrailshort}} service, see the [{{site.data.keyword.cloudaccesstrailshort}} documentation](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started) for more information. As the {{site.data.keyword.ihsdbaas_postgresql_full}} service is available in the Dallas data center, make sure that you select **us-south** as the region to capture logs.
+{{site.data.keyword.at_full_notm}} records user-initiated activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use this service to investigate abnormal activity and critical actions and to comply with regulatory audit requirements. In addition, you can be alerted about actions as they happen. The events that are collected comply with the Cloud Auditing Data Federation (CADF) standard. For more information, see the [getting started tutorial for {{site.data.keyword.at_full_notm}}](/docs/services/Activity-Tracker-with-LogDNA?topic=logdnaat-getting-started#getting-started). To capture the {{site.data.keyword.ihsdbaas_postgresql_full}} service logs, make sure that you select **Dallas** as the region when you create the {{site.data.keyword.at_full_notm}} instance.
 
 ## List of events
 {: #list-activity-tracker-events}
@@ -52,6 +52,4 @@ For the event of `cluster.create` and `cluster.delete`, the {{site.data.keyword.
 ## Where to view the events
 {: #view-activity-tracker-events}
 
-<!-- Option 2: Add the following sentence if your service sends events to the account domain. -->
-
-{{site.data.keyword.cloudaccesstrailshort}} events are available in the {{site.data.keyword.cloudaccesstrailshort}} **account domain** that is available in the {{site.data.keyword.cloud_notm}} region where the events are generated.
+{{site.data.keyword.cloudaccesstrailshort}} events are available in only the {{site.data.keyword.at_full}} instance that is created in the **Dallas** region.
